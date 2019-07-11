@@ -1,20 +1,29 @@
-def signup (mdp)
-	puts "Entrez votre mot de passe"
+#signup
+def signup 
+	puts "entrez un mot de passe"
 	mdp = gets.chomp
+	return mdp
 end
-def login 
-	puts "Entrez votre mot de passe"
-	test = gets.chomp
-		if test!= mdp
-			puts "le mot de passe ne correspond pas"
-		elsif test == mdp
-		puts "Bonjour sur notre espace privé"	
-		end
-end
-login 
-def welcome_screen
 
+#login
+def  login(mdp)
+	puts "veuillez confirmer le mot de passe"
+	teste =gets.chomp
+	while teste != mdp
+		puts "Vous avez oublier. Réessayer"
+		teste = gets.chomp
+	end
 end
+
+#welcome_screen
+def welcome_screen
+	puts "Bonjour tous le monde vous pouvez nous joindre ici"
+end
+
+#perform
 def perform
-	
+	mdp = signup
+	login(mdp)
+	welcome_screen 
 end
+ perform
