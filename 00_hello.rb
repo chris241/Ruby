@@ -14,6 +14,6 @@ end
 #méthode qui affiche regroupe toutes les méthodes et qui affiche le bonjour 
  def perform
  	first_name= ask_first_name
- 	say_hello (first_name)
+ 	say_hello (first_name) 
  end
 perform

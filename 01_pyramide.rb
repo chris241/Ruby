@@ -36,7 +36,7 @@ def wtf_pyramid
     if nbr.even?
       puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
       nbr = gets.chomp.to_i
-    elsif nbr.even
+    else
       puts "Voici la pyramide :impaire"
       for etage in 1..nbr
         puts "#{l*nbr + base}"
