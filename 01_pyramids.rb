@@ -27,6 +27,7 @@ def build_pyramid(nbr)
     build_floor(base+1,nbr)
   end
 end
+<<<<<<< HEAD
 
 def full_pyramid
   build_pyramid(entrer)
@@ -50,3 +51,7 @@ end
 half_pyramid(entrer)
 full_pyramid
 wtf_pyramid
+=======
+half_pyramid
+full_pyramid
+>>>>>>> 8af8eee5225c1b12642c2f27ca3f65239163ad94
